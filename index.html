@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/bootstrap.css" rel="stylesheet"  />
+<link href="css/position.css" rel="stylesheet"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+ 	$i = 0;
+	$(document).ready(function(e) {
+		$("#idtoggletable").click(function(e) {
+            $("#idtable").toggle(1000);
+			$i++;
+			if (i%2==0)
+			{
+				var myfooter = document.getElementById("idmyfooter");
+				myfooter.style.marginTop = "803px";
+				document.write($i);
+			}
+        });
+	});
+</script>
+<title>百度一下 你就知道</title>
+</head>
+<body>
+
+<div class="weather">
+	<iframe id="wetherinfo" name="wetherinfo" src="http://tianqi.3835.com/code/weather3.htm?id=&fc=2E93D9&imgurl=5&bgc=&days=1" frameBorder=0 width=320 height=20 marginwidth=0 marginheight=0 hspace=0 vspace=0 scrolling=no allowtransparency=true></iframe>
+   	<span class="login">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">登录</a></span>
+</div>
+
+
+
+<div class="container">
+
+    <div class="logo" align="center">
+        <img src="images/bdlogo.gif" />
+    </div>
+
+    <div class="linksearch">
+        <div class="link">
+            <a href="#">新闻&nbsp;&nbsp;&nbsp;</a>
+            <a href="#">网页&nbsp;&nbsp;&nbsp;</a>
+            <a href="#">贴吧&nbsp;&nbsp;&nbsp;</a>
+            <a href="#">知道&nbsp;&nbsp;&nbsp;</a>
+            <a href="#">音乐&nbsp;&nbsp;&nbsp;</a>
+            <a href="#">视频&nbsp;&nbsp;&nbsp;</a>
+            <a href="#">地图&nbsp;&nbsp;&nbsp;</a>
+            <a href="#">百科&nbsp;&nbsp;&nbsp;</a>
+            <a href="#">文库&nbsp;&nbsp;&nbsp;</a>
+            <a href="#">更多&gt;&gt;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+    </div>
+
+    <!--    
+    <form class="form-search">
+    	<input type="text" class="search-query" size="60">  
+       	<button type="button" class="btn btn-primary" data-loading-text="正在加载...">百度一下</button>
+    </form>
+    -->
+    
+    <div class="row search">
+		<div class="col-lg-7">
+    		<input type="text" class="form-control">
+  		</div>
+        
+        <div class="col-xs-1">
+	       	<button type="button" class="btn btn-primary" data-loading-text="正在加载...">百度一下</button>
+  		</div>
+	</div>
+    <!--
+    <button type="button" class="close" aria-hidden="true" id="idopentab">&times;<font size="1">打开</font></button>
+    -->
+    
+    <div class="mytable">
+    	<!--<p class="text-danger" id="idtoggletable">Toggle Table</p> -->
+        <button type="button" class="btn btn-success btn-xs" id="idtoggletable">Toggle Table</button>
+        <!--
+        <button type="button" class="close" aria-hidden="true" id="idclosetab">&times;<font size="1">关闭</font></button>
+        -->
+        
+    	<table class="table table-hover table-bordered" id="idtable">
+  			<tr>
+            	<td>门户</td>
+                <td><a href="http://www.sohu.com">搜狐</a></td>
+                <td><a href="http://www.163.com">网易</a></td>
+                <td><a href="http://www.tencent.com">腾讯</a></td>
+            </tr>
+            <tr>
+            	<td>购物</td>
+                <td><a href="http://www.jd.com">京东</a></td>
+                <td><a href="http://www.z.cn">亚马逊</a></td>
+                <td><a href="http://www.dangdang.com">当当</a></td>
+            </tr>
+            <tr>
+            	<td>学习</td>
+                <td><a href="http://www.apkbus.com">APKBUS</a></td>
+                <td><a href="http://www.w3cschool.org">W3CSchool</a></td>
+                <td><a href="http://www.eoeandroid">EOE</a></td>
+            </tr>
+		</table>
+    </div>
+    
+    
+    <div class="footer" id="idmyfooter">
+        <p align="center"><a href="#">把百度设为首页</a></p>
+        <p align="center"><a href="#">加入百度推广</a> | <a href="#"> 搜索风云榜</a> | <a href="#">关于百度</a> | <a href="#"> About Baidu</a> | <a href="#">加入开放首页</a></p>
+	</div>
+    
+</div>
+
+
+
+<script src="js/jquery.js" ></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
+
+<!--
+
+	function closeTab()
+    {
+		var closetab = document.getElementById("idtable");
+		closetab.style.display = "none";
+		var myopentab = document.getElementById("idopentab");
+		myopentab.style.display = "block";
+		var myfooter = document.getElementById("idmyfooter");
+		myfooter.style.marginTop = "303px";
+    }
+	
+	function openTab()
+	{
+		var opentab1 = document.getElementById("idtable");
+		opentab1.style.display = "";
+		var myfooter = document.getElementById("idmyfooter");
+		myfooter.style.marginTop = "100px";
+	}
+    -->
