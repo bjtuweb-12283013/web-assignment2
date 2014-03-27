@@ -28,7 +28,7 @@ div.search {
 div.mytable {
 	margin-top:40px;
 	width:800px;
-	margin-left:160px;
+	margin-left:170px;
 }
 
 div.link {
@@ -38,4 +38,9 @@ div.link {
 div.footer {
 	margin-top:100px;
 	font-size:10px;
+}
+
+div.news {
+	width:420px;
+	margin-left:350px;
 }
